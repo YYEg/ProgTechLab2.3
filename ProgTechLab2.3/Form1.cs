@@ -7,6 +7,8 @@ namespace ProgTechLab2._3
         public Form1()
         {
             InitializeComponent();
+
+            txtSentenceIn.Text = Properties.Settings.Default.yourSentence.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -21,6 +23,9 @@ namespace ProgTechLab2._3
             {
                 return;
             }
+
+            Properties.Settings.Default.yourSentence = yourSentence;
+            Properties.Settings.Default.Save();
 
             MessageBox.Show(Logic.Sort(yourSentence));
         }
