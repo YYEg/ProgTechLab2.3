@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSentenceIn = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -43,12 +43,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Вывод заданной строки в порядке убывания длин слов";
             // 
-            // textBox1
+            // txtSentenceIn
             // 
-            this.textBox1.Location = new System.Drawing.Point(28, 97);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(397, 27);
-            this.textBox1.TabIndex = 1;
+            this.txtSentenceIn.Location = new System.Drawing.Point(28, 97);
+            this.txtSentenceIn.Name = "txtSentenceIn";
+            this.txtSentenceIn.Size = new System.Drawing.Size(397, 27);
+            this.txtSentenceIn.TabIndex = 1;
             // 
             // button1
             // 
@@ -76,7 +76,7 @@
             this.ClientSize = new System.Drawing.Size(454, 206);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSentenceIn);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -88,7 +88,7 @@
         #endregion
 
         private Label label1;
-        private TextBox textBox1;
+        private TextBox txtSentenceIn;
         private Button button1;
         private Label label2;
     }

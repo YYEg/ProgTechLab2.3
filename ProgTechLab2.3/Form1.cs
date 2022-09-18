@@ -11,7 +11,18 @@ namespace ProgTechLab2._3
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string yourSentence = this.txtSentenceIn.Text;
 
+            try
+            {
+                yourSentence = this.txtSentenceIn.Text;
+            }
+            catch
+            {
+                return;
+            }
+
+            MessageBox.Show(Logic.Sort(yourSentence));
         }
     }
 
