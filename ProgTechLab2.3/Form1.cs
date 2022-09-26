@@ -15,15 +15,6 @@ namespace ProgTechLab2._3
         {
             string yourSentence = this.txtSentenceIn.Text;
 
-            try
-            {
-                yourSentence = this.txtSentenceIn.Text;
-            }
-            catch
-            {
-                return;
-            }
-
             Properties.Settings.Default.yourSentence = yourSentence;
             Properties.Settings.Default.Save();
 
